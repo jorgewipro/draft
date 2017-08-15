@@ -3,23 +3,6 @@
   <h2>Welcome!</h2>
   <p>Best place to get your fantasy sports groove on</p>
 </div>
-{{#each model as |player|}}
-  <article class="listing">
-    <h3>{{player.first_name}}</h3> <h3>{{player.last_name}}</h3>
-    <div class="detail owner">
-      <span>age:</span> {{player.age}}
-    </div>
-    <div class="detail type">
-      <span>Position:</span> {{player.position}}
-    </div>
-    <div class="detail location">
-      <span>Avg avg in league:</span> {{player.average_position_age_diff}}
-    </div>
-    <div class="detail bedrooms">
-      <span>Other Name</span> {{player.name_brief}}
-    </div>
-    <div class="detail bedrooms">
-      <span>League</span> {{player.league}}
-    </div>
-  </article>
+{{#each model as |playerUnit|}}
+{{player-listing player=playerUnit}}
 {{/each}}
