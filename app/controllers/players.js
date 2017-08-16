@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   actions: {
-    filterByCity(param) {
+    filterByPlayer(param) {
       if (param !== '') {
         return this.get('store').query('player', { firstname: param });
       } else {
