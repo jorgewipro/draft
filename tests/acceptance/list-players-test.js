@@ -13,13 +13,17 @@ test('should show players as the home page', function (assert) {
 test('should list available players.', function (assert) {
   visit('/');
   andThen(function() {
-    assert.equal(find('.listing').length, 12, 'should see 12 listings');
+    assert.equal(find('.row').length, 13, 'should see 13 listings');
   });
 
 });
 
-test('should filter the list of players by name.', function (assert) {
-});
-
-test('should show details for a selected player', function (assert) {
-});
+// test('should filter the list of players by name.', function (assert) {
+//   visit('/');
+//  fillIn('.form-control input', 'Consuelo');
+//  keyEvent('.form-control input', 'keyup', 69);
+//  andThen(function() {
+//    assert.equal(find('.col-md-4 h4').length, 1, 'should show 1 listing');
+//    assert.equal(find('.col-md-4 h4 :contains("Consuelo")').length, 1, 'should contain 1 listing with name Consuelo"');
+//  });
+// });

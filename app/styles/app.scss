@@ -1,6 +1,17 @@
 @import "bootstrap";
-
 .profile-image {
   height: 100px;
   width: 100px;
+}
+ a:hover{
+    text-decoration: none;
+}
+.playerHero {
+  color: white;
+  padding: 20px;
+  background: #1B71DE;
+  margin-bottom: 20px;
+}
+.searchContainer {
+  margin-bottom: 20px;
 }

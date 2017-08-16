@@ -1,8 +1,11 @@
-<div class="jumbo">
-  <div class="right tomster"></div>
-  <h2>Welcome!</h2>
-  <p>Best place to get your fantasy sports groove on</p>
+<div class="hero">
+  <div class="row">
+    <div class="col-md-12">
+  <div class="playerHero">
+  <h1>Welcome!</h1>
+  <h3>Best place to get your fantasy sports groove on.</h3>
+  </div>
+    </div>
+  </div>
 </div>
-{{#each model as |playerUnit|}}
-{{player-listing player=playerUnit}}
-{{/each}}
+{{outlet}}

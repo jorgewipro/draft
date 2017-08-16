@@ -1,19 +1,15 @@
-<article class="listing">
-  <div class="profile-image"><img src="../images/default-profile.png" alt="" class="img-thumbnail"></div>
-  <h3>{{player.first_name}}</h3> <h3>{{player.last_name}}</h3>
-  <div class="detail owner">
-    <span>age:</span> {{player.age}}
+{{#link-to "players.show" player}}
+<div class="container-fluid">
+<div class="row">
+  <div class="col-md-1">
+    <img src="../images/default-profile.png" alt="" class="img-thumbnail">
   </div>
-  <div class="detail type">
-    <span>Position:</span> {{player.position}}
+  <div class="col-md-4">
+  <h4>{{player.firstname}} {{player.lastname}}</h4>
+</div>
+  <div class="col-md-4">
+    <span>League:</span> {{player.league}}
   </div>
-  <div class="detail location">
-    <span>Avg avg in league:</span> {{player.average_position_age_diff}}
-  </div>
-  <div class="detail bedrooms">
-    <span>Other Name</span> {{player.name_brief}}
-  </div>
-  <div class="detail bedrooms">
-    <span>League</span> {{player.league}}
-  </div>
-</article>
+</div>
+</div>
+{{/link-to}}

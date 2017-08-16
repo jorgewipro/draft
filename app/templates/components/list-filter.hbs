@@ -1,0 +1,10 @@
+
+<div class="form-group">
+  <div class="searchContainer">
+{{input value=value
+        key-up=(action 'handleFilterEntry')
+        class="form-control"
+        placeholder="Search By Name"}}
+        </div>
+{{yield results}}
+</div>

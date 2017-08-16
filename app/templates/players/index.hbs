@@ -1,0 +1,10 @@
+{{#list-filter
+   filter=(action 'filterByCity')
+   as |players|}}
+  <ul class="list-group">
+    {{#each players as |playerUnit|}}
+      <li class="list-group-item">{{player-listing player=playerUnit}}</li>
+    {{/each}}
+  </ul>
+{{/list-filter}}
+{{outlet}}
