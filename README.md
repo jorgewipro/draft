@@ -1,6 +1,6 @@
 # draft
 
-Just a quick little app to show pdraft players.
+Just a quick little app to show draft players.
 
 ## Prerequisites
 
